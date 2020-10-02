@@ -12,18 +12,18 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "YOUR BOT TOKEN HERE"
-    OWNER_ID = "YOUR OWN ID HERE"  # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = "YOUR USERNAME HERE"
+    API_KEY = "1107019447:AAEgfZB2VfqA2S5cFktJAjWxMsgwA8z34Xo"
+    OWNER_ID = "754495556"  # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_USERNAME = "Kamlesh_Kirodewal"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
-    MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
-    GBAN_LOGS = None
+    SQLALCHEMY_DATABASE_URI = 'mongodb+srv://user:user@cluster0.uwhes.mongodb.net/user?retryWrites=true&w=majority'  # needed for any database modules
+    MESSAGE_DUMP = '-1001296115165'  # needed to make sure 'save from' messages persist
+    GBAN_LOGS = '-1001296115165'
     LOAD = []
     NO_LOAD = ['translation', 'rss']
     WEBHOOK = False
-    URL = None
+    URL = 'https://misstinabot.herokuapp.com'
 
     # OPTIONAL
     #ID Seperation format [1,2,3,4]
@@ -32,10 +32,10 @@ class Config(object):
     SUPPORT_USERS = get_user_list('elevated_users.json', 'supports')  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     WHITELIST_USERS = get_user_list('elevated_users.json', 'whitelists')  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     SPAMMERS = None
-    DONATION_LINK = None  # EG, paypal
+    DONATION_LINK = https://t.me/kamlesh_kirodewal  # EG, paypal
     CERT_PATH = None
     PORT = 5000
-    DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
+    DEL_CMDS = True  # Whether or not you should delete "blue text must click" commands
     STRICT_GBAN = False
     STRICT_GMUTE = False
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
